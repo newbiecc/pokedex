@@ -21,7 +21,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var musicPlayer: AVAudioPlayer!
     
     var inSearchMode = false
-    var filterdPokemon = [Pokemon]()
+    var filteredPokemon = [Pokemon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let poke: Pokemon!
             
             if inSearchMode {
-                poke = filterdPokemon[indexPath.row]
+                poke = filteredPokemon[indexPath.row]
             } else {
                 poke = pokemon[indexPath.row]         // IndexPath.row is not row but for every cell
             }
@@ -86,14 +86,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
 
+    // When the cell is tapped
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        let poke: Pokemon!
+        
+        if inSearchMode {
+            poke = filteredPokemon[indexPath.row]
+        } else {
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("PokemonDetailVC", sender: poke)     //perform the segue to change to antoher View
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if inSearchMode {
-            return filterdPokemon.count
+            return filteredPokemon.count
         }
         return pokemon.count
     }
@@ -130,8 +140,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         } else {
             inSearchMode = true
             let lower = searchBar.text!.lowercaseString
-            filterdPokemon = pokemon.filter({$0.name.rangeOfString(lower) != nil}) //filter is a function of array, rangeOfString is a function of string
+            filteredPokemon = pokemon.filter({$0.name.rangeOfString(lower) != nil}) //filter is a function of array, rangeOfString is a function of string
             collection.reloadData()
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailsVC = segue.destinationViewController as? PokemonDetailVC {    //grab the view controller
+                if let poke = sender as? Pokemon {
+                    detailsVC.pokemon = poke
+                }
+            }
         }
     }
 }
