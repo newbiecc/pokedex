@@ -185,10 +185,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4MF-tS-TNI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MF-tS-TNI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-wN-6hn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-wN-6hn">
                                         <rect key="frame" x="172" y="13" width="256" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="UsM-oo-ud1"/>
@@ -206,13 +206,16 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nr-Db-PUC">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nr-Db-PUC">
                                         <rect key="frame" x="14" y="16" width="41" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="Yvj-dB-OVA"/>
                                             <constraint firstAttribute="width" constant="41" id="boT-u4-kA4"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="XOB-KV-tWE" eventType="touchUpInside" id="ORI-Fw-3WL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.071577416429999999" blue="0.13189602110000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -224,7 +227,7 @@
                                     <constraint firstItem="HKO-wN-6hn" firstAttribute="centerX" secondItem="4MF-tS-TNI" secondAttribute="centerX" id="rm9-px-FxR"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z7i-HZ-suB">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z7i-HZ-suB">
                                 <rect key="frame" x="20" y="88" width="560" height="365"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-gf-X51">
@@ -353,10 +356,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-lZ-Qxc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-lZ-Qxc">
                                 <rect key="frame" x="0.0" y="435" width="600" height="21"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution: Venusaur LVL 32:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIh-5u-GKr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venusaur LVL 32:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIh-5u-GKr">
                                         <rect key="frame" x="135" y="0.0" width="330" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="9An-k8-sET"/>
@@ -374,7 +377,7 @@
                                     <constraint firstItem="dIh-5u-GKr" firstAttribute="centerY" secondItem="iW5-lZ-Qxc" secondAttribute="centerY" id="vui-2n-C3N"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-p7-HhR">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-p7-HhR">
                                 <rect key="frame" x="13" y="472" width="560" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="571" translatesAutoresizingMaskIntoConstraints="NO" id="p9M-8s-pCy">
@@ -412,7 +415,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentEvoImg" destination="p9M-8s-pCy" id="0w4-dg-AKJ"/>
+                        <outlet property="defenseLbl" destination="dAg-oX-DB6" id="rj0-k0-fzT"/>
+                        <outlet property="descriptionLbl" destination="V34-7L-Iza" id="xq5-8n-Gle"/>
+                        <outlet property="evoLbl" destination="dIh-5u-GKr" id="j9b-xY-kaq"/>
+                        <outlet property="heightLbl" destination="dOx-kl-7Xu" id="8Lb-RA-t5f"/>
+                        <outlet property="mainImg" destination="PZ0-nk-Jaz" id="Jfp-BK-XMs"/>
                         <outlet property="nameLbl" destination="HKO-wN-6hn" id="9TX-Rq-cYT"/>
+                        <outlet property="nextEvoImg" destination="snu-i6-jY3" id="DG7-gP-XK0"/>
+                        <outlet property="pokedexLbl" destination="V17-LE-N4d" id="3UQ-fm-Tqh"/>
+                        <outlet property="typeLbl" destination="TYK-ld-ude" id="bdq-0w-IZA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SW7-b4-RxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
