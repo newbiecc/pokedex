@@ -21,6 +21,7 @@
 		911776651C4761F00090C809 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 911776641C4761F00090C809 /* music.mp3 */; };
 		911776671C47CB420090C809 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911776661C47CB420090C809 /* PokemonDetailVC.swift */; };
 		911776691C47D19C0090C809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911776681C47D19C0090C809 /* Main.storyboard */; };
+		9117766B1C4932400090C809 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117766A1C4932400090C809 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		911776641C4761F00090C809 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		911776661C47CB420090C809 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		911776681C47D19C0090C809 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9117766A1C4932400090C809 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A407A2477E98F3FFAA6C8533 /* Pods-pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokedex/Pods-pokedex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				9117765D1C4754A90090C809 /* csv.swift */,
+				9117766A1C4932400090C809 /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				911776671C47CB420090C809 /* PokemonDetailVC.swift in Sources */,
 				911776411C4668080090C809 /* AppDelegate.swift in Sources */,
 				9117765C1C473A270090C809 /* PokeCell.swift in Sources */,
+				9117766B1C4932400090C809 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
