@@ -94,9 +94,9 @@
 				911776611C4754DF0090C809 /* Resources */,
 				9117765F1C4754BE0090C809 /* Util */,
 				9117764A1C4668080090C809 /* Assets.xcassets */,
+				911776681C47D19C0090C809 /* Main.storyboard */,
 				9117764C1C4668080090C809 /* LaunchScreen.storyboard */,
 				9117764F1C4668080090C809 /* Info.plist */,
-				911776681C47D19C0090C809 /* Main.storyboard */,
 				911776471C4668080090C809 /* pokedex.xcdatamodeld */,
 			);
 			path = pokedex;
